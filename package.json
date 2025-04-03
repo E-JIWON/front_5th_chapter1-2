@@ -24,8 +24,7 @@
     "test:generate": "playwright codegen localhost:5173",
     "prepare": "husky",
     "homepage": "https://e-jiwon.github.io/front_5th_chapter1-2/",
-    "predeploy": "pnpm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "pnpm run build && gh-pages -d dist"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
